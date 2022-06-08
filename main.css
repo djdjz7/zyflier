@@ -1,0 +1,148 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    text-align: center;
+    margin:0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.primaryButton {
+    border-radius: 10px;
+    font-family: 'MicrosoftYahei';
+    font-size: 17px;
+    padding: 0;
+    border: 0;
+    color: white;
+    transition: 0.4s all;
+    padding-bottom: 3px;
+    background: linear-gradient(90deg, rgb(178, 146, 255) 0%, rgba(141, 52, 255,1) 100%);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
+}
+
+.primaryButton:active{
+    transform: scale(0.97);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
+
+}
+
+.primaryButton:hover {
+    cursor:pointer;
+    background: linear-gradient(90deg, rgb(158, 117, 255) 0%, rgb(120, 17, 255) 100%);
+    box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgba(141, 52, 255,1);
+}
+
+h1 {
+    font-family:'MicrosoftYahei';
+}
+p{
+    line-height: 1.3;
+}
+
+.mainArea {
+    padding: 50px 100px 50px 100px;
+    margin: 0;
+    background-color: #f3f3f3;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: -7px -7px 10px -8px rgba(255, 255, 255,1), 10px 10px 15px -10px rgb(141, 141, 141)
+}
+
+@media screen and (max-width: 600px) {
+    .buttons{
+        margin-top: -10px;
+        flex-direction: column;
+    }
+    .buttons button{
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    .mainArea{
+        padding: 30px 60px 30px 60px;
+    }
+}
+@media screen and (min-width:600px) {
+    .buttons{
+        flex-direction: row;
+    }
+    .buttons button{
+        margin-top: 10px;
+        margin-left: 0px;
+
+    }
+    
+}
+
+.centerBox{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: top 20px, left 20px, right 20px, bottom 20px;
+}
+
+.secondaryButton {
+    border-radius: 10px;
+    font-family: 'MicrosoftYahei';
+    font-size: 17px;
+    padding: 0;
+    border: 0;
+    color: black;
+    transition: 0.4s all;
+    padding-bottom: 3px;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 236, 236) 100%);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(168, 168, 168);
+}
+
+.secondaryButton:active{
+    transform: scale(0.97);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(160, 160, 160);
+
+}
+
+.secondaryButton:hover {
+    cursor:pointer;
+    background: linear-gradient(90deg, rgb(219, 219, 219) 0%, rgb(209, 209, 209) 100%);
+    box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgb(168, 168, 168);
+}
+
+.backButton button{
+    border-radius: 30px;
+    font-family: 'MicrosoftYahei';
+    font-size: 17px;
+    padding: 0;
+    border: 0;
+    color: white;
+    transition: 0.4s all;
+    padding-bottom: 3px;
+    background: #000000;
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(168, 168, 168);
+    position: fixed;
+    right:20px;
+    bottom: 20px
+}
+
+.backButton button:active{
+    transform: scale(0.97);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(160, 160, 160);
+}
+
+.backButton button:hover {
+    cursor:pointer;
+    box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgb(168, 168, 168);
+}
+
+.logoImg {
+    height: 130px;
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
+}
