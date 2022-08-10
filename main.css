@@ -1,5 +1,5 @@
 body{
-    display: grid;
+    display: flexbox;
     justify-content: center;
     background-color: #f3f3f3;
     text-align: center;
@@ -24,7 +24,7 @@ p{
     padding: 0;
     border: 0;
     color: white;
-    transition: 0.4s all;
+    transition: 0.4s;
     padding-bottom: 3px;
     background: linear-gradient(90deg, rgb(178, 146, 255) 0%, rgba(141, 52, 255,1) 100%);
     box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
@@ -105,12 +105,12 @@ p{
     transition: 0.4s all;
     padding-bottom: 3px;
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 236, 236) 100%);
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(168, 168, 168);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -6px rgb(172, 171, 171);
 }
 
 .secondaryButton:active{
     transform: scale(0.97);
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(160, 160, 160);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -10px rgb(172, 171, 171);
 
 }
 
@@ -158,4 +158,57 @@ p{
     border-width: 10px;
     border-color: white;
     box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgb(168, 168, 168);
+}
+
+
+.blueButton {
+    border-radius: 10px;
+    font-family: "Noto Sans SC","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 17px;
+    padding: 0;
+    border: 0;
+    color: aliceblue;
+    transition: 0.4s all;
+    padding-bottom: 3px;
+    background: linear-gradient(90deg, rgb(99, 211, 255) 0%, rgb(47, 184, 248) 100%);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(28, 191, 255);
+}
+
+.blueButton:active{
+    transform: scale(0.97);
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(28, 191, 255);
+
+}
+
+.blueButton:hover {
+    cursor:pointer;
+    background: linear-gradient(90deg, rgb(53, 185, 236) 0%, rgb(23, 163, 228) 100%);
+    box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgb(28, 191, 255);
+}
+.primaryTextArea{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(141, 52, 255,1);
+    box-shadow: 7px 7px 15px -7px rgba(141, 52, 255,1);
+    transition: 0.4s;
+}
+
+.primaryTextArea:active
+{
+    border-style: solid;
+    border-color: rgba(141, 52, 255,1);
+    box-shadow: 10px 10px 25px -8px rgba(141, 52, 255,1);
+}
+.primaryTextArea:focus
+{
+    border-style: solid;
+    border-color: rgba(141, 52, 255,1);
+    box-shadow: 10px 10px 20px -8px rgba(141, 52, 255,1);
+}
+
+.progressBar
+{
+    height: 30px;
+    accent-color: rgba(141, 52, 255,1);
+    
 }
