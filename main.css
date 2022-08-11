@@ -1,7 +1,11 @@
 body{
     display: flexbox;
     justify-content: center;
-    background-color: #f3f3f3;
+    background-image: url("https://img.xjh.me/random_img.php?return=302");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F3F3F3;
+    image-rendering: auto;
     text-align: center;
     margin:0;
     user-select: none;
@@ -50,9 +54,12 @@ p{
 }
 
 .mainArea {
-    padding: 50px 100px 50px 100px;
+    padding: 25px 50px 25px 50px;
     margin: 0;
     background-color: #f3f3f3;
+    background-color: rgba(243,243,243,0);
+    
+    backdrop-filter: blur(100px) brightness(112%);
     height: auto;
     width: auto;
     border-radius: 15px;
