@@ -1,7 +1,9 @@
 body{
     display: flexbox;
     justify-content: center;
-    background-image: url("https://img.xjh.me/random_img.php?return=302");
+    /*background-image: url("https://img.xjh.me/random_img.php?return=302");
+    */
+    background-image: url("./bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F3F3F3;
