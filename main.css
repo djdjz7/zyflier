@@ -225,3 +225,24 @@ p{
     accent-color: rgba(141, 52, 255,1);
     
 }
+
+a{
+    transition: 0.2s;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgba(141, 52, 255,1);
+    
+}
+a:hover{
+    text-shadow: 0px 0px 10px rgba(141, 52, 255,1);
+}
+a:active{
+    text-decoration: none;
+    color: rgba(141, 52, 255,1);
+}
+a:visited{
+    text-decoration: none;
+    color: rgba(141, 52, 255,1);
+}
