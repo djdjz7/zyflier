@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>更新日志</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./404.css">
+    <!--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
+    -->
+</head>
+
+
+
+<body style="display: flex;
+flex-direction: column;
+align-content: center;
+align-items: center;
+justify-content: center; height:100vh; margin: 0;
+background-color: #ecebeb;">
+
+
+
+    <h1 style="color: rgb(170, 105, 255);
+    text-shadow:  2px 2px 4px rgba(141, 52, 255,1);
+    font-size: 100px;
+    ">4 0 4</h1>
+    <h2 style="color: rgb(99, 99, 99);"">诶呀，找不到这个页面</h2>
+    <span style="color: rgb(99,99,99)">要不看看其他站点？</span>
+    <a href="http://djdjz7.gitee.io/zyflier">Gitee</a>
+    <a href="http://djdjz7.github.io/zyflier">Github</a>
+    <a href="http://djdjz7.ml">djdjz7.ml</a>
+
+<script>
+    let body = document.querySelector('body');
+    let text = body.querySelector('h1');
+    body.addEventListener('mousemove', shadowMove);
+    function shadowMove(e) {
+      var bodyPosition = {
+        x: body.offsetWidth,
+        y: body.offsetHeight
+      }
+      var textPosition = {
+        x: e.target.offsetLeft + e.offsetX,
+        y: e.target.offsetTop + e.offsetY
+      }
+      var shadowX = (textPosition.x - bodyPosition.x / 2) * 0.01;
+      var shadowY = (textPosition.y - bodyPosition.y / 2) * 0.01;
+      text.style.textShadow = `
+      ${shadowX}px ${shadowY}px 4px rgba(141, 52, 255,1)
+    `;
+    
+    }
+</script>
+</body>
