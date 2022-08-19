@@ -1,57 +1,35 @@
-<!DOCTYPE html>
-<meta charset="UTF-8">
 <html>
-
-<head>
-    <title>`(*>﹏<*)′ 找不到该页面</title>
-    <link rel="shortcut icon" href="./favicon.ico">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./404.css">
-    <!--
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-    -->
-</head>
-
-
-
-<body style="display: flex;
-flex-direction: column;
-align-content: center;
-align-items: center;
-justify-content: center; height:100vh; margin: 0;
-background-color: #ecebeb;">
-
-
-
-    <h1 style="color: rgb(170, 105, 255);
-    text-shadow:  2px 2px 4px rgba(141, 52, 255,1);
-    font-size: 100px;
-    ">4 0 4</h1>
-    <h2 style="color: rgb(99, 99, 99);"">诶呀，找不到这个页面</h2>
-    <span style="color: rgb(99,99,99)">要不看看其他站点？</span>
-    <a href="http://djdjz7.gitee.io/zyflier">Gitee</a>
-    <a href="http://djdjz7.github.io/zyflier">Github</a>
-    <a href="http://djdjz7.ml">djdjz7.ml</a>
-
-<script>
-    let body = document.querySelector('body');
-    let text = body.querySelector('h1');
-    body.addEventListener('mousemove', shadowMove);
-    function shadowMove(e) {
-      var bodyPosition = {
-        x: body.offsetWidth,
-        y: body.offsetHeight
-      }
-      var textPosition = {
-        x: e.target.offsetLeft + e.offsetX,
-        y: e.target.offsetTop + e.offsetY
-      }
-      var shadowX = (textPosition.x - bodyPosition.x / 2) * 0.01;
-      var shadowY = (textPosition.y - bodyPosition.y / 2) * 0.01;
-      text.style.textShadow = `
-      ${shadowX}px ${shadowY}px 4px rgba(141, 52, 255,1)
-    `;
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8">
+        <title>`(*>﹏<*)′ 找不到页面啦</title>
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link rel="stylesheet" type="text/css" href="404.css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&amp;display=swap">
+    </head>
+    <body style="font-family: Google Sans;overflow:hidden;margin: 0px;display: grid;">
+        <div style="max-height: 100vh; max-width: 100vh; margin: 0; margin: 0px;display:flex;" class="circles">
+            <div style="height: 100vh; width: 100vw; background-color: rgb(86, 41, 105); position: absolute;"></div>
+            <div style="height:260vh; width: 260vh; border-radius: 130vh; background-color: rgb(110, 53, 135); position: fixed; margin: -130vh; box-shadow: 0px 0px 50px;"></div>
+            <div style="height:230vh; width: 230vh; border-radius: 115vh; background-color: rgb(143, 70, 174); position: fixed; margin: -115vh;box-shadow: 0px 0px 50px"></div>
+            <div style="height:200vh; width: 200vh; border-radius: 100vh; background-color: rgb(166, 86, 200); position: fixed; margin: -100vh;box-shadow: 0px 0px 50px"></div>
+            <div style="height:170vh; width: 170vh; border-radius: 85vh; background-color: rgb(188, 97, 226); position: fixed; margin: -85vh;box-shadow: 0px 0px 50px"></div>
+            <div style="height:140vh; width: 140vh; border-radius: 70vh; background-color: rgb(211, 108, 255); position: fixed; margin: -70vh;box-shadow: 0px 0px 50px"></div>
+            
+        </div>
+        <div style="backdrop-filter: blur(8px);-webkit-backdrop-filter: blur(8px) ;position: absolute; height: 100vh; width: 100vw; margin: 0px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <p style="color:white; font-size: 20vh; font-weight: bold; margin: 0px; text-shadow: 0px 0px 1vh;">4 0 4</p>
+            <p style="color: white; font-size: 5vh; margin: 0px; text-shadow: 0px 0px 1vh;">`(*>﹏<*)′</p>
+            <p style="display: flex; flex-direction: column; align-items: center; line-height: 4vh; font-size: 2.5vh;">
+                <a href="../">返回主页</a>
+                <span style="color: white; margin-top: 2vh">其余站点</span>
+                <a href="http://djdjz7.gitee.io/zyflier">Gitee</a>
+                <a href="http://djdjz7.ml">djdjz7.ml</a>
+                <a href="http://djdjz7.github.io/zyflier">Github</a>
+            </p>
+        </div>
+            
+        
+    </body>
     
-    }
-</script>
-</body>
+</html>
