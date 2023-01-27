@@ -4,39 +4,48 @@
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>中育飞车助手</title>
+
         <link rel="shortcut icon" href="./favicon.ico">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <!--
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-    -->
+        
+        <link rel="stylesheet" href="main.css">
     </head>
-    <body style="margin: 0; padding-top: 0px;" ondragstart="return false;">
-        <div class="centerBox">
-            <div class="mainArea">
-               <div class="indexTitle" style="text-align:center; align-items: center">
-                    <picture>
-                        <source srcset="./logo2x.png 2x, ./logo3x.png 3x">
-                        <img src="./logo.png", class="logoImg">
-                    </picture>
-                    
-                    <h1>中育飞车助手</h1>
-                    <div class="buttons" style="display:flex; justify-content: center; align-items: center;">
-                       <button class="primaryButton" style=" height: 40px; width: 150px;" onclick="window.location.href='./update/installer.exe'">下载</button>
-                       <div style="width:30px ;"></div>
-                       <button class="primaryButton" style="height: 40px; width: 150px; " onclick="window.location.href='./changelogs.html'">更新日志</button>
-                    </div>
-                    <button class="secondaryButton" style="height: 40px; width: 150px; margin-top: 25px;" onclick="window.location.href='./help.html'">帮助</button><br>
-                    <button class="primaryButton" style=" height: 40px; width: 150px; margin-top: 25px" onclick="window.location.href='./new.html'">关于 3.0</button><br><br>
-                    <p style="color:rgb(79, 79, 79); border-radius: 10px; ; padding:12px; background-color: rgba(255, 255, 255, 0.5);">
-                        系统要求：<br>
-                        Microsoft Windows 7 with Service Pack 1 及以上<br>
-                        64 位操作系统<br>
-                        .net 6 运行时<br>
-                        <span style="font-size: 12px">背景图片来源于 <a href="https://img.xjh.me/">https://img.xjh.me/</a></span>
-                    </p>
-               </div>
-            </div>
+    <style>
+
+
+    </style>
+    <body>
+        <picture style="z-index: 1;">
+            <source srcset="./logo2x.png 2x, ./logo3x.png 3x">
+            <img src="./logo.png", class="logoImg">
+        </picture>
+        <h1 class="title">
+            中育飞车助手
+        </h1>
+        <button class="primaryButton" style="width: 7em;height: 2.5em;margin-bottom: 1em;" onclick="window.location.href='./update/installer.exe'">立即下载</button>
+        <div class="blurBox">
+            <table>
+                <tr>
+                    <td>
+                        <div class="advantageCell">
+                            <h2>无限制的使用</h2>
+                            <span>移除了不合理的设备验证限制，中育飞车助手可以在任何满足需求的设备上使用。</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="advantageCell">
+                            <h2>更强大的功能</h2>
+                            <span>基于截图功能，中育飞车助手拥有一系列的衍生功能。截图，从未如此有趣。</span>
+                        </div></td>
+                    <td><div class="advantageCell">
+                        <h2>极佳的兼容性</h2>
+                        <span>
+                            致力于兼容中育推出的最新版本，中育飞车助手将保持更新至不再有需求为止。
+                        </span>
+                    </div></td>
+                </tr>
+            </table>
         </div>
+
     </body>
     
 </html>

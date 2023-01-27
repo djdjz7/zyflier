@@ -1,45 +1,164 @@
-body{
-    display: flexbox;
-    justify-content: center;
-    background-image: url("https://img.xjh.me/random_img.php?return=302");
-    /* background-image: url("./bg.jpg"); */
+:root {
+    font-size: 15px;
+  }
+
+body {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: -apple-system,"微软雅黑", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #b286dc;
+    background-image: 
+      radial-gradient(closest-side, rgb(197, 139, 255), rgba(235, 105, 78, 0)),
+      radial-gradient(closest-side, rgb(139, 82, 219), rgba(243, 11, 164, 0)),
+      radial-gradient(closest-side, rgb(188, 133, 255), rgba(254, 234, 131, 0)),
+      radial-gradient(closest-side, rgb(153, 116, 254), rgba(170, 142, 245, 0)),
+      radial-gradient(closest-side, rgb(170, 98, 243), rgba(248, 192, 147, 0));
+    background-size: 
+      130vmax 130vmax,
+      80vmax 80vmax,
+      90vmax 90vmax,
+      110vmax 110vmax,
+      90vmax 90vmax;
+    background-position:
+      -80vmax -80vmax,
+      60vmax -30vmax,
+      10vmax 10vmax,
+      -30vmax -10vmax,
+      50vmax 50vmax;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F3F3F3;
-    image-rendering: auto;
-    text-align: center;
-    margin:0;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-drag: none;
-    font-family: -apple-system, "Microsoft YaHei","黑体","宋体",sans-serif;
-}
+    animation: 10s movement linear infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  body::after {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  @keyframes movement {
+    0%, 100% {
+      background-size: 
+        130vmax 130vmax,
+        80vmax 80vmax,
+        90vmax 90vmax,
+        110vmax 110vmax,
+        90vmax 90vmax;
+      background-position:
+        -80vmax -80vmax,
+        60vmax -30vmax,
+        10vmax 10vmax,
+        -30vmax -10vmax,
+        50vmax 50vmax;
+    }
+    25% {
+      background-size: 
+        100vmax 100vmax,
+        90vmax 90vmax,
+        100vmax 100vmax,
+        90vmax 90vmax,
+        60vmax 60vmax;
+      background-position:
+        -60vmax -90vmax,
+        50vmax -40vmax,
+        0vmax -20vmax,
+        -40vmax -20vmax,
+        40vmax 60vmax;
+    }
+    50% {
+      background-size: 
+        80vmax 80vmax,
+        110vmax 110vmax,
+        80vmax 80vmax,
+        60vmax 60vmax,
+        80vmax 80vmax;
+      background-position:
+        -50vmax -70vmax,
+        40vmax -30vmax,
+        10vmax 0vmax,
+        20vmax 10vmax,
+        30vmax 70vmax;
+    }
+    75% {
+      background-size: 
+        90vmax 90vmax,
+        90vmax 90vmax,
+        100vmax 100vmax,
+        90vmax 90vmax,
+        70vmax 70vmax;
+      background-position:
+        -50vmax -40vmax,
+        50vmax -30vmax,
+        20vmax 0vmax,
+        -10vmax 10vmax,
+        40vmax 60vmax;
+    }
+  }
+  
+  .blurBox
+  {
+      max-width: 700px;
+      padding: 1em;
+      z-index: 1;
+      border-radius: 2em;
+      backdrop-filter: blur(10em);
+      -webkit-backdrop-filter: blur(10em);
+      box-shadow: 0.5em 0.5em 3em rgba(148, 69, 185, 0.5);
+  }
+  
+  .advantageCell h2
+  {
+      margin-top: 0;
+      color: rgba(256, 256, 256, 0.8);
+      text-shadow: 0 0 0.5em rgba(76, 8, 195, 0.2);
+  }
+  
+  .advantageCell span
+  {
+      color: rgba(256, 256, 256, 0.7);
+  }
+  
+  .title
+  {
+      z-index: 1;
+      color: rgba(256, 256, 256, 0.9);
+      text-shadow: 0 0 0.5em rgba(76, 8, 195, 0.2);
+  }
 
 .primaryButton {
+    z-index: 1;
     border-radius: 10px;
     font-size: 17px;
-    padding: 0;
     border: 0;
     color: white;
     transition: 0.4s;
     padding-bottom: 3px;
-    background: linear-gradient(90deg, rgb(178, 146, 255) 0%, rgba(141, 52, 255,1) 100%);
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
+    background: linear-gradient(90deg, rgb(158, 117, 255) 0%, rgba(141, 52, 255,1) 100%);
+    box-shadow:  7px 7px 15px -7px rgba(141, 52, 255,0.7);
 }
 
 .primaryButton:active{
     transform: scale(0.97);
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
+    box-shadow: 7px 7px 15px -7px rgba(141, 52, 255,0.7);
 
 }
 
 .primaryButton:hover {
     cursor:pointer;
     background: linear-gradient(90deg, rgb(158, 117, 255) 0%, rgb(120, 17, 255) 100%);
-    box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgba(141, 52, 255,1);
+    box-shadow: 10px 10px 25px -8px rgba(141, 52, 255,0.7);
 }
 
 p{
@@ -47,6 +166,7 @@ p{
 }
 
 .mainArea {
+    z-index: 1;
     padding: 50px 100px 20px 100px;
     margin: 0;
     background-color: #f3f3f3;
@@ -125,6 +245,7 @@ p{
 }
 
 .backButton button{
+    z-index: 2;
     border-radius: 30px;
     font-size: 17px;
     padding: 0;
@@ -152,7 +273,7 @@ p{
 .logoImg {
     height: 130px;
     border-radius: 30px;
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgba(141, 52, 255,1);
+    box-shadow: 0.5em 0.5em 3em rgba(148, 69, 185, 0.5);
 }
 
 .images{
