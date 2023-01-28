@@ -362,3 +362,24 @@ a:visited{
     text-decoration: none;
     color: rgba(141, 52, 255,1);
 }
+
+.continueButton
+{
+    color: white;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow
+{
+    transition: 0.2s all;
+    margin-left: 0.2em;
+}
+
+.continueButton:hover .arrow
+{
+    transform: translateX(0.5em);
+}
