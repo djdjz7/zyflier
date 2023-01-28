@@ -44,8 +44,6 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
   }
   
   @keyframes movement {
@@ -113,8 +111,8 @@ body {
       padding: 1em;
       z-index: 1;
       border-radius: 2em;
-      backdrop-filter: blur(10em);
-      -webkit-backdrop-filter: blur(10em);
+      backdrop-filter: blur(4em);
+      -webkit-backdrop-filter: blur(4em);
       box-shadow: 0.5em 0.5em 3em rgba(148, 69, 185, 0.5);
   }
 
