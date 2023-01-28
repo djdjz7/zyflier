@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>中育飞车助手</title>
 
-        <link rel="shortcut icon" href="./favicon.ico">
-        
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <style>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>中育飞车助手</title>
+
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
 
 
-    </style>
-    <body>
-        <picture style="z-index: 1;">
-            <source srcset="./logo2x.png 2x, ./logo3x.png 3x">
-            <img src="./logo.png", class="logoImg">
-        </picture>
-        <h1 class="title">
-            中育飞车助手
-        </h1>
-        <button class="primaryButton" style="width: 7em;height: 2.5em;margin-bottom: 1em;" onclick="window.location.href='./update/installer.exe'">立即下载</button>
-        <div class="blurBox">
-            <table>
-                <tr>
-                    <td>
-                        <div class="advantageCell">
-                            <h2>无限制的使用</h2>
-                            <span>移除了不合理的设备验证限制，中育飞车助手可以在任何满足需求的设备上使用。</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="advantageCell">
-                            <h2>更强大的功能</h2>
-                            <span>基于截图功能，中育飞车助手拥有一系列的衍生功能。截图，从未如此有趣。</span>
-                        </div></td>
-                    <td><div class="advantageCell">
+</style>
+
+<body>
+    <picture style="z-index: 1;">
+        <source srcset="./logo2x.png 2x, ./logo3x.png 3x">
+        <img src="./logo.png" , class="logoImg">
+    </picture>
+    <h1 class="title">
+        中育飞车助手
+    </h1>
+    <button class="primaryButton" style="width: 7em;height: 2.5em;margin-bottom: 1em;"
+        onclick="window.location.href='./update/installer.exe'">立即下载</button>
+    <div class="blurBox">
+        <table>
+            <tr>
+                <td>
+                    <div class="advantageCell">
+                        <h2>无限制的使用</h2>
+                        <span>移除了不合理的设备验证限制，中育飞车助手可以在任何满足需求的设备上使用。</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="advantageCell">
+                        <h2>更强大的功能</h2>
+                        <span>基于截图功能，中育飞车助手拥有一系列的衍生功能。截图，从未如此有趣。</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="advantageCell">
                         <h2>极佳的兼容性</h2>
                         <span>
                             致力于兼容中育推出的最新版本，目前中育飞车助手将保持更新。
                         </span>
-                    </div></td>
-                </tr>
-            </table>
-        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-top: 1em; z-index: 1;" class="homePageLinks">
+        <a href="./help.html">帮助</a>
+        <a href="./changelogs.html">更新日志</a>
+        <a href="./privacy.html">隐私政策</a>
+    </div>
+    <span style="z-index: 1; text-align: center;">
+        <h3 style="margin-top:0.5em;margin-bottom: 0.5em;">注意</h3>
+        在 2.0.8 中，中育对代码进行了混淆处理<br>
+        我们正在处理此问题
+    </span>
 
-        <span style="z-index: 1; margin-top:0.5em; text-align: center;">
-            <h3 style="margin-top:0.5em;margin-bottom: 0.5em;">注意</h3>
-            在 2.0.8 中，中育对代码进行了混淆处理<br>
-            我们正在处理此问题
-        </span>
-        
-        
-        
-    </body>
 
-    <script>
-        function hideIncompat()
-        {
-            var deviceNotSupported=document.getElementById("deviceNotSupported");
-            deviceNotSupported.style.visibility="hidden";
-            document.cookie="checkCompat=false;"
-        }
-        function checkCompatibility()
-        {
-            
-            var agent=navigator.userAgent.toLowerCase();
-            if(agent.indexOf("win64")==-1&&agent.indexOf("wow64")==-1)
-            {return false; }
-            if(agent.indexOf("windows nt 10.0")!=-1)
-            { return true; }
-            if(agent.indexOf("windows nt 6.2")!=-1)
-            {return true;}
-            if(agent.indexOf("windows nt 6.1")!=-1)
-            {return true;}
-            return false;
-        }
-        function showIncompat()
-        {
-            if(!checkCompatibility())
-            {
-                if(getCookie("checkCompat")=="false")
-                {
-                    document.write(`<div style="position: fixed; bottom: 0; z-index: 1; margin: 0.5em; color: rgba(255, 255, 255, 0.5);">此设备不受支持</div>`);
-                    return;
-                }
-                document.write(`
+
+</body>
+
+<script>
+    function hideIncompat() {
+        var deviceNotSupported = document.getElementById("deviceNotSupported");
+        deviceNotSupported.style.visibility = "hidden";
+        document.cookie = "checkCompat=false;"
+    }
+    function checkCompatibility() {
+
+        var agent = navigator.userAgent.toLowerCase();
+        if (agent.indexOf("win64") == -1 && agent.indexOf("wow64") == -1) { return false; }
+        if (agent.indexOf("windows nt 10.0") != -1) { return true; }
+        if (agent.indexOf("windows nt 6.2") != -1) { return true; }
+        if (agent.indexOf("windows nt 6.1") != -1) { return true; }
+        return false;
+    }
+    function showIncompat() {
+        if (!checkCompatibility()) {
+            if (getCookie("checkCompat") == "false") {
+                document.write(`<div style="position: fixed; bottom: 0; z-index: 1; margin: 0.5em; color: rgba(255, 255, 255, 0.5);">此设备不受支持</div>`);
+                return;
+            }
+            document.write(`
                 <div id="deviceNotSupported" style="top: 0;left:0;height: 100vh; width: 100vw;z-index: 9999;position: fixed; backdrop-filter: blur(0.5em);-webkit-backdrop-filter: blur(0.5em); display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.4);">
             <div style="z-index: 99999;border-radius: 1em; padding: 1em; background-color: rgba(255,255,255,0.2); text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <h1 style="margin-top: 0;">此设备不受支持</h1>
@@ -102,21 +103,19 @@
             </div>
         </div>
         <div style="position: fixed; bottom: 0; z-index: 1; margin: 0.5em; color: rgba(255, 255, 255, 0.5);">此设备不受支持</div>`
-        );
-            }
+            );
         }
-        function getCookie(cname)
-        {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0; i<ca.length; i++) 
-            {
-                var c = ca[i].trim();
-                if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-            }
-            return "";
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
         }
-        showIncompat()
-    </script>
-    
+        return "";
+    }
+    showIncompat()
+</script>
+
 </html>

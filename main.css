@@ -34,6 +34,9 @@ body {
     align-items: center;
     justify-content: center;
     color: rgba(255, 255, 255, 0.8);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
   
   body::after {
@@ -258,7 +261,7 @@ p{
     transition: 0.4s all;
     padding-bottom: 3px;
     background: #000000;
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(168, 168, 168);
+    box-shadow: 7px 7px 15px -7px rgba(168, 168, 168, 0.5);
     position: fixed;
     right:20px;
     bottom: 20px
@@ -266,12 +269,12 @@ p{
 
 .backButton button:active{
     transform: scale(0.97);
-    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255,1), 7px 7px 15px -7px rgb(160, 160, 160);
+    box-shadow: 7px 7px 15px -7px rgba(160, 160, 16,0.5);
 }
 
 .backButton button:hover {
     cursor:pointer;
-    box-shadow: -2px -2px 10px -8px rgba(255, 255, 255,1), 10px 10px 25px -8px rgb(168, 168, 168);
+    box-shadow: 10px 10px 25px -8px rgb(168, 168, 168, 0.5);
 }
 
 .logoImg {
@@ -380,4 +383,18 @@ a:visited{
 .continueButton:hover .arrow
 {
     transform: translateX(0.5em);
+}
+
+.homePageLinks > a
+{
+    color: rgba(255,255,255,0.8);
+    text-decoration: underline;
+
+}
+
+.homePageLinks > a:hover{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,0.5);
+}
+.homePageLinks > a:active{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,0.5);
 }

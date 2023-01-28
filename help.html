@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>帮助</title>
-        <link rel="shortcut icon" href="./favicon.ico">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <!--
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>帮助</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
     -->
-    </head>
-    <body>
-        
-        <div class="mainArea" style="margin: 30px 30px">
-            <h1>帮助</h1>
-            
-            <h2>以下问题不会在近期修复</h2>
-            <p>由于无法在调试时复现，无法彻底退出的问题<b>不会修复</b><br>
-            </p><br>
-            
-            <img src="./mica.bmp" class="images" height="300px">
-            <p style="color:gray; font-size: 15px;">主程序界面样例</p>
-            <div style="text-align: left;">
-                <h3>图中各元素说明</h3>
-                <p>图中白色区域为主颜色控制区域，灰色为次颜色控制区域</p>
-                <p>窗口标题由“基本-窗口标题”控制，图中为“中育飞车助手”</p>
-                <p>“基本-连接密码-添加圆圈”控制是否为显示的连接密码加上圆圈，例如</p>
-                <h3>⑧&nbsp⑧&nbsp④&nbsp⑧</h3>
-                <br>
-                <h2>图片传输</h2>
-                <p><b>现已确认，在图片大小超过一定值时，图片会受到压缩</b></p>
-                <p><b>若图片大小超过另一值时，不会执行传输</b></p>
-                <img src="./transfersuccessmax.jpg" class="images"/>
-                <p style="color:gray; font-size: 15px;">目前传输成功的最大图片</p>
-                <br>
-                <img src="./transferunsuccessfulmin.jpg" class="images"/>
-                <p style="color:gray; font-size: 15px;">目前传输失败的最小图片</p>
-                <h2>SpecialChannels</h2>
-                <p>请以配置工具为准</p>
-                <p>除配置工具内的列出项外，可通过编辑源的方式使用其他源，但不保证其可用性</p>
-                <h3>SpecialChannels·命令输入</h3>
-                参见<a href="./cmdhelp.html">此处</a>
-                <br>
-                <br>
-                
-                <h2>关于 Aero/Mica/亚克力</h2>
-                    Aero 仅在 Windows 7 可用，Mica 仅在 Windows 11 (Build 22523 及以上) 可用，亚克力效果仅在 Windows 10 (1803及以上) 可用。<br>
-                <h3>关闭此效果</h3>
-                <p>
-                    两种方法可关闭此效果：<br>
-                    1. 将纯色图片设为壁纸<br>
-                    2. 或以兼容模式运行，将兼容模式设为除 Windows 7, Windows 10 和 Windows 11 以外的操作系统
-                </p>
-                <br>
-                <h2>问题排查</h2>
-                <p><b>**在开始之前，请先确保计算机上安装有 <a href="https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0/runtime" >.net 6运行时</a> **</b></p>
-                <h3>api-ms-win-crt-runtime-l1-1-0-dll缺失</h3>
-                <p>安装<a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable</a></p>
-                <h3>检查更新失败</h3>
-                <p>
-                    确保网络连接正常，访问<a href="https://djdjz7.gitee.io/zyflier/update/installerver">此链接</a>检查更新服务的可用性<br>
-                    检查计算机 %APPDATA%/中育飞车助手/Installer.exe 是否成功下载<br>
-                </p>
-                <h3>标题等中文乱码</h3>
-                <p>
-                    由于字符编码更改，自 3.1.1 以下的用户在更新后会遇到中文字符乱码问题，请前往手动更改 Program Files/中育飞车助手/config.ini 字符编码为 UTF-8
-                </p>
-                <h3>配置文件无法写入等</h3>
-                <p>
-                    手动设置  Program Files/中育飞车助手 的读写权限
-                </p>
-            </div>
-        </div>
-        <div class="backButton">
-            <button style="height: 60px;width: 60px" onclick="window.location.href='./'">返回</button>
-        </div>
-    </body>
+</head>
+
+<body style="text-align: left; align-items: flex-start;">
+    <h1>帮助</h1>
+
+    <h2>以下问题不会在近期修复</h2>
+    <p>由于无法在调试时复现，无法彻底退出的问题<b>不会修复</b><br>
+    </p><br>
+
+    <img src="./mica.bmp" class="images" height="300px">
+    <p style="color:gray; font-size: 15px;">主程序界面样例</p>
+    <div style="text-align: left;">
+        <h3>图中各元素说明</h3>
+        <p>图中白色区域为主颜色控制区域，灰色为次颜色控制区域</p>
+        <p>窗口标题由“基本-窗口标题”控制，图中为“中育飞车助手”</p>
+        <p>“基本-连接密码-添加圆圈”控制是否为显示的连接密码加上圆圈，例如</p>
+        <h3>⑧&nbsp⑧&nbsp④&nbsp⑧</h3>
+        <br>
+        <h2>图片传输</h2>
+        <p><b>现已确认，在图片大小超过一定值时，图片会受到压缩</b></p>
+        <p><b>若图片大小超过另一值时，不会执行传输</b></p>
+        <img src="./transfersuccessmax.jpg" class="images" />
+        <p style="color:gray; font-size: 15px;">目前传输成功的最大图片</p>
+        <br>
+        <img src="./transferunsuccessfulmin.jpg" class="images" />
+        <p style="color:gray; font-size: 15px;">目前传输失败的最小图片</p>
+        <h2>SpecialChannels</h2>
+        <p>请以配置工具为准</p>
+        <p>除配置工具内的列出项外，可通过编辑源的方式使用其他源，但不保证其可用性</p>
+        <h3>SpecialChannels·命令输入</h3>
+        参见<a href="./cmdhelp.html">此处</a>
+        <br>
+        <br>
+
+        <h2>关于 Aero/Mica/亚克力</h2>
+        Aero 仅在 Windows 7 可用，Mica 仅在 Windows 11 (Build 22523 及以上) 可用，亚克力效果仅在 Windows 10 (1803及以上) 可用。<br>
+        <h3>关闭此效果</h3>
+        <p>
+            两种方法可关闭此效果：<br>
+            1. 将纯色图片设为壁纸<br>
+            2. 或以兼容模式运行，将兼容模式设为除 Windows 7, Windows 10 和 Windows 11 以外的操作系统
+        </p>
+        <br>
+        <h2>问题排查</h2>
+        <p><b>**在开始之前，请先确保计算机上安装有 <a href="https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0/runtime">.net 6运行时</a>
+                **</b></p>
+        <h3>api-ms-win-crt-runtime-l1-1-0-dll缺失</h3>
+        <p>安装<a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable</a></p>
+        <h3>检查更新失败</h3>
+        <p>
+            确保网络连接正常，访问<a href="https://djdjz7.gitee.io/zyflier/update/installerver">此链接</a>检查更新服务的可用性<br>
+            检查计算机 %APPDATA%/中育飞车助手/Installer.exe 是否成功下载<br>
+        </p>
+        <h3>标题等中文乱码</h3>
+        <p>
+            由于字符编码更改，自 3.1.1 以下的用户在更新后会遇到中文字符乱码问题，请前往手动更改 Program Files/中育飞车助手/config.ini 字符编码为 UTF-8
+        </p>
+        <h3>配置文件无法写入等</h3>
+        <p>
+            手动设置 Program Files/中育飞车助手 的读写权限
+        </p>
+    </div>
+    <div class="backButton">
+        <button style="height: 60px;width: 60px" onclick="window.location.href='./'">返回</button>
+    </div>
+</body>
+
 </html>

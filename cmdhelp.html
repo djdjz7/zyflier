@@ -1,135 +1,135 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>SpecialChannels·命令输入</title>
-        <link rel="shortcut icon" href="./favicon.ico">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <!--
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SpecialChannels·命令输入</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
     -->
-    </head>
-    <body>
-        
-        <div class="mainArea" style="margin: 30px 30px;">
-            <h1>SpecialChannels·命令输入</h1>
-            <div style="text-align: left;">
-                <h2>可用命令</h2>
-                <p>可用命令可能随版本变化而不同，请确保安装最新版本<br>命令不区分大小写</p>
-                <h2>Print</h2>
-                <h3>说明</h3>
-                利用给定文字输出图片
-                <h3>参数</h3>
-                接受一个必须参数，至多5个可选参数<br>
-                参数不足时报错，参数过多时报错<br>
-                ["内容"] (字体大小/20) (前景颜色/Black) (背景颜色/White) (字体/微软雅黑) (字重/Regular)<br>
-                "( )" 内为可选参数，"/"后为默认值，任意可选参数前的所有可选参数必须出现。<br>
-                必须在内容两侧附加双引号<br><br>
-                字重同时接受样式，可用样式如下：<br>
-                Regular 常规<br>
-                Bold 加粗<br>
-                Italic 倾斜<br>
-                Underline 下划线<br> 
-                Strikout 强调线<br>
-                多项样式使用逗号 "," 连接
-                <h3>样例</h3>
-                print "Hello world!"<br>
-                print "Hello world!" 30<br>
-                print "Hello world!" 30 #1f1e33<br>
-                print "Hello world!" 30 #1f1e33 Gray<br>
-                print "Hello world!" 30 #1f1e33 Gray Consolas<br>
-                print "Hello world!" 30 #1f1e33 Gray Consolas Bold,Strikeout<br><br>
+</head>
+
+<body style="text-align: left; align-items: flex-start;">
+    <h1>SpecialChannels·命令输入</h1>
+    <div style="text-align: left;">
+        <h2>可用命令</h2>
+        <p>可用命令可能随版本变化而不同，请确保安装最新版本<br>命令不区分大小写</p>
+        <h2>Print</h2>
+        <h3>说明</h3>
+        利用给定文字输出图片
+        <h3>参数</h3>
+        接受一个必须参数，至多5个可选参数<br>
+        参数不足时报错，参数过多时报错<br>
+        ["内容"] (字体大小/20) (前景颜色/Black) (背景颜色/White) (字体/微软雅黑) (字重/Regular)<br>
+        "( )" 内为可选参数，"/"后为默认值，任意可选参数前的所有可选参数必须出现。<br>
+        必须在内容两侧附加双引号<br><br>
+        字重同时接受样式，可用样式如下：<br>
+        Regular 常规<br>
+        Bold 加粗<br>
+        Italic 倾斜<br>
+        Underline 下划线<br>
+        Strikout 强调线<br>
+        多项样式使用逗号 "," 连接
+        <h3>样例</h3>
+        print "Hello world!"<br>
+        print "Hello world!" 30<br>
+        print "Hello world!" 30 #1f1e33<br>
+        print "Hello world!" 30 #1f1e33 Gray<br>
+        print "Hello world!" 30 #1f1e33 Gray Consolas<br>
+        print "Hello world!" 30 #1f1e33 Gray Consolas Bold,Strikeout<br><br>
 
 
-                <h2>ScreenShot</h2>
-                <h3>说明</h3>
-                截取电脑屏幕，不受图片传输控制
-                <h3>参数</h3>
-                不接收参数，不对多余的参数报错
-                <h3>别名</h3>
-                ss<br><br>
+        <h2>ScreenShot</h2>
+        <h3>说明</h3>
+        截取电脑屏幕，不受图片传输控制
+        <h3>参数</h3>
+        不接收参数，不对多余的参数报错
+        <h3>别名</h3>
+        ss<br><br>
 
-                <h2>RemoteRandom</h2>
-                <h3>说明</h3>
-                截取在线随机图片，图片源为当前设定值
-                <h3>参数</h3>
-                不接收参数，不对多余的参数报错
-                <h3>别名</h3>
-                RemoteRan, rr<br><br>
+        <h2>RemoteRandom</h2>
+        <h3>说明</h3>
+        截取在线随机图片，图片源为当前设定值
+        <h3>参数</h3>
+        不接收参数，不对多余的参数报错
+        <h3>别名</h3>
+        RemoteRan, rr<br><br>
 
-                <h2>Webshot</h2>
-                <h3>说明</h3>
-                >=3.2.2<br>
-                截取网页
-                <h3>参数</h3>
-                接受一个可选参数，不对多余的参数报错<br>
-                无参数时截取默认网页 <a href="https://www.bilibili.com">https://www.bilibili.com</a>
-                <h3>样例</h3>
-                ws djdjz7.ml
-                <h3>别名</h3>
-                ws<br>
-                <h3>行为变更</h3>
-                >=3.3.0后，此命令截取完整页面，而非 1920*1080<br><br>
+        <h2>Webshot</h2>
+        <h3>说明</h3>
+        >=3.2.2<br>
+        截取网页
+        <h3>参数</h3>
+        接受一个可选参数，不对多余的参数报错<br>
+        无参数时截取默认网页 <a href="https://www.bilibili.com">https://www.bilibili.com</a>
+        <h3>样例</h3>
+        ws djdjz7.ml
+        <h3>别名</h3>
+        ws<br>
+        <h3>行为变更</h3>
+        >=3.3.0后，此命令截取完整页面，而非 1920*1080<br><br>
 
-                <h2>AdvancedWebshot</h2>
-                <h3>说明</h3>
-                >=3.2.2<br>
-                截取网页，设定图片分辨率
-                <h3>参数</h3>
-                接受三个参数（宽，高，地址），参数不足时报错<br>
-                <h3>样例</h3>
-                ws 1920 1000 djdjz7.ml
-                <h3>别名</h3>
-                aws, advancedws<br><br>
+        <h2>AdvancedWebshot</h2>
+        <h3>说明</h3>
+        >=3.2.2<br>
+        截取网页，设定图片分辨率
+        <h3>参数</h3>
+        接受三个参数（宽，高，地址），参数不足时报错<br>
+        <h3>样例</h3>
+        ws 1920 1000 djdjz7.ml
+        <h3>别名</h3>
+        aws, advancedws<br><br>
 
-                <h2>Cmd</h2>
-                <h3>说明</h3>
-                调用系统命令提示符执行命令<br>
-                正常执行时返回命令提示符输出内容<br>
-                参数错误时返回错误信息<br>
-                <h3>参数</h3>
-                接受一个参数，在 "cmd "后输入的所有内容均作为命令<br>
-                参数不足时报错<br>
-                <h3>样例</h3>
-                cmd ping localhost
-                <h3>别名</h3>
-                CommadLine, cmd.exe<br><br>
+        <h2>Cmd</h2>
+        <h3>说明</h3>
+        调用系统命令提示符执行命令<br>
+        正常执行时返回命令提示符输出内容<br>
+        参数错误时返回错误信息<br>
+        <h3>参数</h3>
+        接受一个参数，在 "cmd "后输入的所有内容均作为命令<br>
+        参数不足时报错<br>
+        <h3>样例</h3>
+        cmd ping localhost
+        <h3>别名</h3>
+        CommadLine, cmd.exe<br><br>
 
-                <h2>PopUp</h2>
-                <h3>说明</h3>
-                >=3.2.2<br>
-                截取网页
-                <h3>参数</h3>
-                接受一个参数，参数不足时报错，对于命令名称 PopUp 后的所有空格均作为内容处理<br>
-                <h3>样例</h3>
-                popup Hello, world!
-                <h3>别名</h3>
-                message, messagebox<br><br>
-
-
-                <h2>BingSearch</h2>
-                >=3.2.2<br>
-                <h3>说明</h3>
-                截取网页
-                <h3>参数</h3>
-                接受一个参数，参数不足时报错，对于命令名称 PopUp 后的所有空格均作为内容处理<br>
-                <h3>样例</h3>
-                bs 你好
-                <h3>别名</h3>
-                bing, search, bs<br><br>
+        <h2>PopUp</h2>
+        <h3>说明</h3>
+        >=3.2.2<br>
+        截取网页
+        <h3>参数</h3>
+        接受一个参数，参数不足时报错，对于命令名称 PopUp 后的所有空格均作为内容处理<br>
+        <h3>样例</h3>
+        popup Hello, world!
+        <h3>别名</h3>
+        message, messagebox<br><br>
 
 
-                <h2>Bluescreen</h2>
-                <h3>说明</h3>
-                调用系统API制造蓝屏
-                <h3>参数</h3>
-                不接收参数，不对多余的参数报错
-                <div style="height:50px"></div>
-            </div>
-        </div>
-        <div class="backButton">
-            <button style="height: 60px;width: 60px" onclick="window.location.href='./'">返回</button>
-        </div>
-    </body>
+        <h2>BingSearch</h2>
+        >=3.2.2<br>
+        <h3>说明</h3>
+        截取网页
+        <h3>参数</h3>
+        接受一个参数，参数不足时报错，对于命令名称 PopUp 后的所有空格均作为内容处理<br>
+        <h3>样例</h3>
+        bs 你好
+        <h3>别名</h3>
+        bing, search, bs<br><br>
+
+
+        <h2>Bluescreen</h2>
+        <h3>说明</h3>
+        调用系统API制造蓝屏
+        <h3>参数</h3>
+        不接收参数，不对多余的参数报错
+        <div style="height:50px"></div>
+    </div>
+    <div class="backButton">
+        <button style="height: 60px;width: 60px" onclick="window.location.href='./'">返回</button>
+    </div>
+</body>
+
 </html>
