@@ -42,7 +42,7 @@ body {
   
 .mainArea {
     width: calc(100vw - 2em);
-    max-width: 1200px;
+    max-width: 1000px;
     justify-content: center;
     text-align: left;
 }
