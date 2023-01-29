@@ -193,31 +193,6 @@ p{
     line-height: 1.3;
 }
 
-@media screen and (max-width: 600px) {
-    .buttons{
-        margin-top: -10px;
-        flex-direction: column;
-    }
-    .buttons button{
-        margin-top: 25px;
-        margin-left: 0px;
-    }
-
-    .mainArea{
-        padding: 30px 60px 30px 60px;
-    }
-}
-@media screen and (min-width:600px) {
-    .buttons{
-        flex-direction: row;
-    }
-    .buttons button{
-        margin-top: 10px;
-        margin-left: 0px;
-
-    }
-    
-}
 
 .centerBox{
     margin: 0;
