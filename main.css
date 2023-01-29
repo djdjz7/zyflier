@@ -28,6 +28,7 @@ body {
       -30vmax -10vmax,
       50vmax 50vmax;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     animation: 10s movement linear infinite;
     display: flex;
     flex-direction: column;
