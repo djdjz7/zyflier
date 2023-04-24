@@ -1,0 +1,6 @@
+h1, h2, h3 {
+    background: linear-gradient(45deg, rgb(56, 194, 253), rgb(13, 230, 89));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
