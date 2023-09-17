@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
     font-size: 15px;
   }
@@ -5,7 +7,7 @@
 body {
     padding-left: 1em;
     padding-right: 1em;
-    font-family: -apple-system,"微软雅黑", sans-serif;
+    font-family: -apple-system, "Inter","微软雅黑", sans-serif;
     margin: 0;
     min-height: 100vh;
     background-color: #b286dc;
